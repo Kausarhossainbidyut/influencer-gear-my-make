@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  header{
+    width: 90vw;
+    margin: 0 auto;
+  }
+  /* nav style  */
+
+  .navbar{
+    color: #3A3A3A;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid pink; */
+  }
+  .login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.login-btn li {
+    list-style-type: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.login-btn a{
+    text-decoration: none;
+    color: #3A3A3A;            
+  }                     /*  navbar style end */
+
+    /* Hero Section style  */
+
+    .hero-section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      /* border: 2px solid tan; */
+    }
+
+    .image-description h2{
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .image-description p{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .btn-1{
+      background-color: #E02C6D;
+      color: #ffffff;
+      width: 196px;
+      height: 44px;
+      border-radius: 41px;
+      border: none;
+    }
+
+    .imag-content{
+      width: 475px;
+      height: 475px;
+      background-image: url("../images/Circle\ design.svg");
+      background-position: center;
+    }
+    .camera-pic{
+      width: 100%;
+    }
+
+    /* Hero section style end  */
+
+    /* company style start  */
+
+    .company{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 80vw;
+      padding: 10px;
+      margin: 30px auto;
+      /* border: 2px solid gray; */
+      box-shadow: 0px 1px 3px 1px #756868;
+      border: none;
+    }
+
+    /* company style end */
+
+
+
+   /* responsive style for mobil */
+
+  @media screen and (max-width:576px) {
+
+    /* nav style  */
+    .navbar,
+    .login-btn{
+        flex-direction: column;
+        text-align: center;
+    }
+    .login-btn li{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    /* nav style end  */
+
+    /* Hero section style  */
+
+    .hero-section{
+      flex-direction: column-reverse;
+    
+    }
+    .camera-pic{
+      background-image: none;
+    }
+    .image-description{
+      text-align: center;
+    }
+    .image-description h2{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .image-description p{
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .imag-content{
+      width: 257px;
+      height: 257px;
+      background-image: url("../images/Circle\ design.svg");
+      background-position: center;
+      
+    }
+    .camera-pic{
+      width: 100%;
+      
+    } /*Hero section style end */
+
+    /* company style  */
+    .company{
+      width: 80vw;
+      flex-wrap: wrap;
+    }  /* company style end  */
+
+  }
